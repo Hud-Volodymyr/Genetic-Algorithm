@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:hint="@string/a"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/solution"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:hint="@string/b"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/solution"
+        app:layout_constraintStart_toEndOf="@+id/a" />
+
+    <EditText
+        android:id="@+id/c"
+        android:hint="@string/c"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/solution"
+        app:layout_constraintStart_toEndOf="@+id/b"/>
+    <EditText
+        android:id="@+id/d"
+        android:hint="@string/d"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/solution"
+        app:layout_constraintStart_toEndOf="@+id/c"/>
+    <EditText
+        android:id="@+id/y"
+        android:hint="@string/y"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/solution"
+        app:layout_constraintStart_toEndOf="@+id/d"/>
+    <TextView
+        android:id="@+id/solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/solve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/solve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/solution" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

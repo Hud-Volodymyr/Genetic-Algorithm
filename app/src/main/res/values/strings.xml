@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Genetic_Algorithm</string>
+    <string name="solve">Solve</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="y">Y</string>
+</resources>
